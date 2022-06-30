@@ -19,14 +19,12 @@ public class Student {
         alive = al;
     }
 
-    //  full constructor with params/args
-    public Student(String n) {
-        name = n;
-    }
-
-    //  full constructor with params/args
-    public Student(double m) {
-        mark = m;
+    // copy-constructor
+    public Student(Student student){
+        name = student.name;
+        age = student.age;
+        mark = student.mark;
+        alive = student.alive;
     }
 
     public String getInfo(){
