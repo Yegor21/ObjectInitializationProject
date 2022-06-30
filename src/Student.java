@@ -11,12 +11,22 @@ public class Student {
         alive = true;
     }
 
-    //constructor with params/args
+    //  full constructor with params/args
     public Student(String n, int a, double m, boolean al){
         name = n;
         age = a;
         mark = m;
         alive = al;
+    }
+
+    //  full constructor with params/args
+    public Student(String n) {
+        name = n;
+    }
+
+    //  full constructor with params/args
+    public Student(double m) {
+        mark = m;
     }
 
     public String getInfo(){
